@@ -28,6 +28,25 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: siteConfig.name,
+  url: siteConfig.url,
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: siteConfig.contactPhone,
+    email: siteConfig.contactEmail,
+    contactType: "customer service",
+  },
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "科學路 101 號",
+    addressLocality: "新竹市",
+    addressCountry: "TW",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -35,6 +54,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-TW" className={`${notoSansTC.variable} h-full`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">
         <Header />
         <main className="flex-1 pt-20">{children}</main>
