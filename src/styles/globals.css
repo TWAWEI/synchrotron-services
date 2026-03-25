@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #0A1628;
+  --color-secondary: #1E3A5F;
+  --color-accent: #00D4FF;
+  --color-surface: #F8FAFC;
+  --color-text-dark: #1A1A2E;
+  --font-sans: var(--font-noto-sans), system-ui, sans-serif;
+}
+
+@layer base {
+  :root {
+    --color-primary: #0A1628;
+    --color-secondary: #1E3A5F;
+    --color-accent: #00D4FF;
+  }
+
+  body {
+    background-color: white;
+    color: var(--color-text-dark);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
