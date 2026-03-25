@@ -20,7 +20,7 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
         <AnimateOnScroll delay={0}>
-          <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white leading-tight tracking-tight">
             世界級分析技術，解決產業核心問題
           </h1>
         </AnimateOnScroll>

@@ -65,7 +65,7 @@ export default async function IndustryPage({ params }: Props) {
                   <Icon className="h-8 w-8 text-accent" />
                 </div>
               )}
-              <h1 className="text-4xl md:text-5xl font-bold text-white">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight">
                 {solution.title}
               </h1>
               <p className="text-xl text-white/80 max-w-2xl">
@@ -180,13 +180,13 @@ export default async function IndustryPage({ params }: Props) {
         <div className="mx-auto max-w-6xl px-4">
           <AnimateOnScroll>
             <div className="rounded-2xl bg-primary px-8 py-16 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 tracking-tight">
                 對此產業方案有興趣？
               </h2>
               <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
                 立即聯繫我們的技術顧問，了解同步輻射技術如何為您的業務帶來突破。
               </p>
-              <Button href="/contact" variant="secondary">
+              <Button href="/contact" variant="primary">
                 聯繫我們
               </Button>
             </div>

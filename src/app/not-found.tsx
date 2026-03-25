@@ -9,7 +9,7 @@ export default function NotFound() {
         <p className="text-gray-500">您要找的頁面可能已移動或不存在</p>
         <Link
           href="/"
-          className="inline-block mt-4 px-6 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent/90 transition-colors"
+          className="inline-block mt-4 px-6 py-3 bg-accent text-primary font-semibold rounded-lg hover:bg-accent/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
         >
           回到首頁
         </Link>

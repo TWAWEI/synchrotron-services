@@ -15,7 +15,7 @@ export function SectionHeading({
 
   return (
     <div className={cn("mb-10", isCenter ? "text-center" : "text-left")}>
-      <h2 className="text-3xl md:text-4xl font-bold text-primary">{title}</h2>
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary tracking-tight">{title}</h2>
       <div
         className={cn(
           "mt-3 h-1 w-16 rounded bg-accent",

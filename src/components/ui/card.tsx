@@ -9,7 +9,7 @@ interface CardProps {
 }
 
 const baseStyles =
-  "rounded-xl bg-white shadow p-6 transition-transform duration-200 ease-in-out hover:scale-[1.02]";
+  "rounded-xl bg-white shadow-sm p-6 transition-all duration-200 ease-in-out hover:shadow-md hover:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent";
 
 export function Card({ children, className, href }: CardProps) {
   const styles = cn(baseStyles, className);

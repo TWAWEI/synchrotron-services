@@ -15,7 +15,7 @@ const iconMap: Record<string, ComponentType<{ className?: string }>> = {
 export function IndustryCards() {
   return (
     <section className="bg-surface py-20" aria-label="Industry solutions">
-      <div className="mx-auto max-w-5xl px-6">
+      <div className="mx-auto max-w-6xl px-6">
         <AnimateOnScroll>
           <SectionHeading
             title="產業解決方案"

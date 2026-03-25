@@ -19,7 +19,7 @@ export default function AboutPage() {
       <section className="bg-primary py-20 text-white">
         <div className="mx-auto max-w-4xl px-4 text-center">
           <AnimateOnScroll>
-            <h1 className="mb-6 text-4xl font-bold md:text-5xl">
+            <h1 className="mb-6 text-3xl font-bold md:text-4xl lg:text-5xl tracking-tight">
               {siteConfig.name}
             </h1>
             <p className="mb-10 text-lg leading-relaxed text-white/80 md:text-xl">

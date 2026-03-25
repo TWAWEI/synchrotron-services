@@ -44,7 +44,7 @@ export function WhyUs() {
           <SectionHeading title="為什麼選擇我們" />
         </AnimateOnScroll>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {items.map((item, index) => {
             const Icon = item.icon;
             return (

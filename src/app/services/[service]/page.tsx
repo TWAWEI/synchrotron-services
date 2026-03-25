@@ -82,7 +82,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                   <Icon className="h-8 w-8 text-accent" />
                 </div>
               )}
-              <h1 className="text-4xl md:text-5xl font-bold text-white">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight">
                 {service.title}
               </h1>
               <p className="text-xl text-white/80 max-w-2xl">
@@ -124,13 +124,13 @@ export default async function ServiceDetailPage({ params }: Props) {
         <div className="mx-auto max-w-6xl px-4">
           <AnimateOnScroll>
             <div className="rounded-2xl bg-primary px-8 py-16 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 tracking-tight">
                 對此合作方式有興趣？
               </h2>
               <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
                 立即聯繫我們，了解如何透過{service.title}為您的業務提供最適合的服務。
               </p>
-              <Button href={`/contact?service=${service.slug}`} variant="secondary">
+              <Button href={`/contact?service=${service.slug}`} variant="primary">
                 立即洽詢
               </Button>
             </div>

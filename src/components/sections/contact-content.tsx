@@ -90,7 +90,7 @@ function ContactForm() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-20">
       <div className="mb-12 text-center">
-        <h1 className="mb-4 text-4xl font-bold text-primary">聯絡我們</h1>
+        <h1 className="mb-4 text-3xl md:text-4xl font-bold text-primary tracking-tight">聯絡我們</h1>
         <p className="text-lg text-gray-600">
           填寫以下表單，我們的專業團隊將盡快與您聯繫
         </p>

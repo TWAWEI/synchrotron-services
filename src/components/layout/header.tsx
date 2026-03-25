@@ -34,7 +34,7 @@ export function Header() {
           "fixed top-0 w-full z-50 transition-all duration-300 text-white",
           scrolled
             ? "bg-primary/95 backdrop-blur shadow-md"
-            : "bg-transparent"
+            : "bg-primary/80 backdrop-blur-sm"
         )}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

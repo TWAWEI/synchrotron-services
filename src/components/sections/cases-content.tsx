@@ -62,7 +62,7 @@ export function CasesContent() {
                 key={value}
                 onClick={() => setActiveFilter(value)}
                 className={cn(
-                  "rounded-full px-5 py-2 text-sm font-medium transition-colors duration-200",
+                  "rounded-full px-5 py-2 text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-1",
                   activeFilter === value
                     ? "bg-accent text-primary shadow"
                     : "border border-gray-300 bg-white text-text-dark hover:bg-gray-50"
@@ -83,9 +83,9 @@ export function CasesContent() {
                 <div
                   onClick={() => handleCardClick(caseItem.id)}
                   className={cn(
-                    "cursor-pointer rounded-xl bg-white p-6 shadow transition-all duration-200",
+                    "cursor-pointer rounded-xl bg-white p-6 shadow-sm transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent",
                     isExpanded
-                      ? "ring-2 ring-accent"
+                      ? "ring-2 ring-accent shadow-md"
                       : "hover:scale-[1.02] hover:shadow-md"
                   )}
                 >

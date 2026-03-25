@@ -40,7 +40,7 @@ const steps: ProcessStep[] = [
 export function ProcessSteps() {
   return (
     <section className="bg-white py-20" aria-label="Collaboration process">
-      <div className="mx-auto max-w-5xl px-6">
+      <div className="mx-auto max-w-6xl px-6">
         <AnimateOnScroll>
           <SectionHeading title="合作流程" />
         </AnimateOnScroll>
@@ -56,13 +56,19 @@ export function ProcessSteps() {
                 delay={index * 0.12}
                 className="relative flex flex-1 flex-col items-center text-center"
               >
-                {/* Connecting line (desktop only) */}
+                {/* Connecting line: horizontal on desktop, vertical on mobile */}
                 {!isLast && (
-                  <div
-                    className="hidden md:block absolute top-7 left-[calc(50%+28px)] right-[-calc(50%-28px)] h-0.5 bg-accent/30"
-                    style={{ width: "calc(100% - 56px)" }}
-                    aria-hidden="true"
-                  />
+                  <>
+                    <div
+                      className="hidden md:block absolute top-7 left-[calc(50%+28px)] h-0.5 bg-accent/30"
+                      style={{ width: "calc(100% - 56px)" }}
+                      aria-hidden="true"
+                    />
+                    <div
+                      className="md:hidden absolute top-[56px] left-1/2 -translate-x-1/2 w-0.5 h-8 bg-accent/30"
+                      aria-hidden="true"
+                    />
+                  </>
                 )}
 
                 {/* Number badge */}

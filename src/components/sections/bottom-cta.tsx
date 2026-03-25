@@ -9,7 +9,7 @@ export function BottomCTA() {
     >
       <div className="mx-auto max-w-3xl px-6 text-center">
         <AnimateOnScroll>
-          <h2 className="text-2xl md:text-3xl font-bold text-white">
+          <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
             不確定需要什麼服務？
           </h2>
           <p className="mt-4 text-white/80 text-lg leading-relaxed">
