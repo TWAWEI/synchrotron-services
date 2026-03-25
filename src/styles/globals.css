@@ -10,12 +10,6 @@
 }
 
 @layer base {
-  :root {
-    --color-primary: #0A1628;
-    --color-secondary: #1E3A5F;
-    --color-accent: #00D4FF;
-  }
-
   body {
     background-color: white;
     color: var(--color-text-dark);

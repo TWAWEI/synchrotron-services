@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Noto_Sans } from "next/font/google";
+import { Noto_Sans_TC } from "next/font/google";
 import "@/styles/globals.css";
 
-const notoSans = Noto_Sans({
+const notoSansTC = Noto_Sans_TC({
   variable: "--font-noto-sans",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-TW" className={`${notoSans.variable} h-full`}>
+    <html lang="zh-TW" className={`${notoSansTC.variable} h-full`}>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
