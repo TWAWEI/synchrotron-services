@@ -35,15 +35,8 @@ const organizationJsonLd = {
   url: siteConfig.url,
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: siteConfig.contactPhone,
     email: siteConfig.contactEmail,
     contactType: "customer service",
-  },
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "科學路 101 號",
-    addressLocality: "新竹市",
-    addressCountry: "TW",
   },
 };
 

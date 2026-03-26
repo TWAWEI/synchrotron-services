@@ -11,7 +11,6 @@ export default function ContactPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ContactPoint",
-    telephone: siteConfig.contactPhone,
     email: siteConfig.contactEmail,
     contactType: "customer service",
     areaServed: "TW",

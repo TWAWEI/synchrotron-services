@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail } from "lucide-react";
 import { siteConfig } from "@/content/site";
 import { cn } from "@/lib/utils";
 
@@ -349,26 +349,6 @@ function ContactForm() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-3">
-                <Phone className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden="true" />
-                <div>
-                  <p className="mb-1 text-sm font-medium text-white/60">電話</p>
-                  <a
-                    href={`tel:${siteConfig.contactPhone}`}
-                    className="text-sm text-white hover:text-accent transition-colors duration-200"
-                  >
-                    {siteConfig.contactPhone}
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden="true" />
-                <div>
-                  <p className="mb-1 text-sm font-medium text-white/60">地址</p>
-                  <p className="text-sm text-white">{siteConfig.address}</p>
-                </div>
-              </div>
             </div>
           </div>
 
@@ -376,7 +356,7 @@ function ContactForm() {
             <h3 className="mb-3 font-bold text-primary">回覆時間</h3>
             <p className="text-sm text-gray-600 leading-relaxed">
               我們通常在 <span className="font-medium text-accent">1-2 個工作天</span>
-              內回覆諮詢。如有緊急需求，歡迎直接致電聯繫。
+              內回覆諮詢。如有緊急需求，歡迎透過 Email 聯繫。
             </p>
           </div>
         </div>

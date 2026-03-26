@@ -55,15 +55,6 @@ export function Footer() {
                   {siteConfig.contactEmail}
                 </a>
               </li>
-              <li>
-                <a
-                  href={`tel:${siteConfig.contactPhone}`}
-                  className="hover:text-white transition-colors duration-200"
-                >
-                  {siteConfig.contactPhone}
-                </a>
-              </li>
-              <li>{siteConfig.address}</li>
             </ul>
           </div>
         </div>
